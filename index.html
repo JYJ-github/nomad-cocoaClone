@@ -3,22 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wolcome to cocoa talk</title>
+    <title>Welcome to cocoa Clone</title>
   </head>
   <body>
     <div id="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
-        <!-- To Do: Wifi Icon -->
+        <i class="fa-solid fa-wifi"></i>
       </div>
       <div class="status-bar__column">
         <span>18:43</span>
       </div>
       <div class="status-bar__column">
         <span>11%</span>
-        <!-- Battery Icon -->
-        <!-- Lightning Icon -->
+        <i class="fa-solid fa-battery-full"></i>
+        <i class="fa-solid fa-bolt"></i>
       </div>
     </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to cocoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a cocoa Account, log in with your email or phone number
+      </p>
+    </header>
+
+    <form itemref="login-form">
+      <input type="text" placeholder="Email of phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find cocoa Account or Password</a>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/190130abf9.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
