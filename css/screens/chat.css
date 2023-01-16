@@ -1,0 +1,139 @@
+#chat-screen {
+  background-color: #abc1d1;
+  height: 1000vh;
+}
+
+#chat-screen .status-bar,
+#chat-screen .alt-screen-header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #abc1d1;
+  opacity: 1;
+  box-sizing: border-box;
+}
+#chat-screen .status-bar {
+  z-index: 2;
+}
+#chat-screen .alt-screen-header {
+  z-index: 1;
+}
+
+.main-chat {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timestamp {
+  background-color: #92a4b2;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+.message-row {
+  width: 100%;
+  display: flex;
+}
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.message__author {
+  opacity: 0.8;
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__bubble {
+  background-color: white;
+  padding: 8px 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+  border-top-left-radius: 0px;
+}
+
+.message__author,
+.message__time {
+  opacity: 0.8;
+  font-size: 13px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.message-row__own {
+  justify-content: flex-end;
+}
+
+.message-row__own .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  margin-left: 5px;
+}
+
+.message-row__own .message__info {
+  flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  box-sizing: border-box;
+}
+
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+}
+
+.reply input {
+  height: 30px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.reply__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.reply__column:last-child > i {
+  position: absolute;
+  top: 14px;
+  right: 60px;
+}
+.reply__column:last-child > button {
+  position: absolute;
+  top: 12px;
+  right: 30px;
+  background-color: var(--yellow);
+  border-radius: 47%;
+  border: var(--main-border);
+}
